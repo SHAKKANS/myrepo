@@ -12,13 +12,14 @@ public class alert {
 
 		System.setProperty("webdriver.chrome.driver", "/Users/Shakk/Documents/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		String name = "Shakkila";
+		String name = "Aahil";
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.findElement(By.id("name")).sendKeys(name);
 		driver.findElement(By.id("alertbtn")).click();
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
+		System.out.println("This is added");
 		driver.close();
 			}
 
