@@ -20,7 +20,6 @@ public class alert {
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
 		System.out.println("This is added");
-		System.out.println("This is secondly added");
 		driver.close();
 			}
 
