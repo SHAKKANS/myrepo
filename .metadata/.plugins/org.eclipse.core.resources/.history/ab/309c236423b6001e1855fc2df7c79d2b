@@ -1,0 +1,19 @@
+
+public class Methods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Methods m = new Methods();
+		m.getData();
+		String name = m.getData();
+		System.out.println(name);
+
+	}
+	
+	public String getData() {
+	System.out.println("This is a method");
+	System.out.println("This is a method1");
+	return "Shakkila Ansari";
+	}
+}

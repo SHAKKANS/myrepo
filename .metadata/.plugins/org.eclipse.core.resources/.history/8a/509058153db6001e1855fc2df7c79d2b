@@ -1,0 +1,19 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Locators {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "/Users/Shakk/Documents/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://staging-login.cargoes.com/auth/realms/dtworld/protocol/openid-connect/auth?client_id=EU&redirect_uri=https://euuat-community.cargoes.com/login?logout&response_type=code&state=PUFWQz");
+		driver.findElement(By.id("username")).sendKeys("eu.msadmin");
+		driver.findElement(By.id("password")).sendKeys("P@ssw0rd");
+		driver.findElement(By.className("btn-primary btn-block btn-lg")).submit();
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class Method2 {
+	
+	public void getuserdata() {
+		System.out.println("This is method2");
+	}
+	
+
+}

@@ -1,0 +1,18 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class UpdateDropdown {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "/Users/Shakk/Documents/chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.spicejet.com/");
+		//driver.findElement(By.xpath("//path[@d=M10.93 0L6.017 5.637 1.034.124 0 1.326 6.055 8 12 1.16z")).click();
+		driver.findElement(By.id("//div[@data-testid='to-testID-origin']//div[@class='css-1dbjc4n r-1awozwy r-18u37iz r-1wtj0ep']"));
+	}
+
+}

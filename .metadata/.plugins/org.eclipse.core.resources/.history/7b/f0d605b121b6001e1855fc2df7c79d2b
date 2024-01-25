@@ -1,0 +1,15 @@
+
+public class Methods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Methods m = new Methods();
+		m.getData();
+
+	}
+	
+	public void getData() {
+	System.out.println("This is a method");
+	}
+}

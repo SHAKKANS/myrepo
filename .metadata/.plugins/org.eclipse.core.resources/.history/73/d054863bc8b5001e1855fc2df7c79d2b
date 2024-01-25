@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class forloopmultiply {
+
+	public static void main(String[] args) {
+		
+			//Array list
+			ArrayList<String> a = new ArrayList<String>();
+			a.add("Shakkila");
+			a.add("Ansari");
+			System.out.println(a.get(0));
+	}
+}
+	
+	
+	
+
